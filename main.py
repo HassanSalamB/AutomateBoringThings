@@ -14,7 +14,7 @@ class GoogleSearch(unittest.TestCase):
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
         self.driver = webdriver.Chrome(
-            "/var/jenkins_home/workspace/PythonGoogleSearch/chromedriver")
+            "/var/jenkins_home/workspace/PythonGoogleSearch/chromedriver", chrome_options=chrome_options)
 
     def test_googlesearch(self):
         self.driver.get('https://www.google.com/')
