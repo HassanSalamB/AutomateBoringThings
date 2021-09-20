@@ -9,13 +9,10 @@ import unittest
 
 class GoogleSearch(unittest.TestCase):
     def setUp(self):
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--disable-dev-shm-usage')
+
 
         self.driver = webdriver.Chrome(
-            "/var/jenkins_home/workspace/PythonGoogleSearch/chromedriver", chrome_options=chrome_options)
+            "/var/jenkins_home/workspace/PythonGoogleSearch/chromedriver")
 
     def test_googlesearch(self):
         self.driver.get('https://www.google.com/')
