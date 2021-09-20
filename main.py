@@ -10,7 +10,7 @@ import unittest
 class GoogleSearch(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(
-            "C://Users//madmin//Documents//XDocs//Data_Science//Github_repos//AutomateBoringThings//chromedriver.exe")
+            "/var/jenkins_home/workspace/PythonGoogleSearch/chromedriver")
 
     def test_googlesearch(self):
         self.driver.get('https://www.google.com/')
